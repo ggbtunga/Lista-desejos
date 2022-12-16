@@ -1,13 +1,13 @@
 import React from "react";
 
 function FigureElement(props){
-    console.log(props.figure)
+
 
     return(
-        <div id={props.figure.id}>
+        <div id={props.id}>
             <img className="icon"
-                src={`assets/${props.figure[0].icon}.jpg`}
-                alt={props.figure.icon}></img>
+                src={`assets/${props.icon}.jpg`}
+                alt={props.icon}></img>
         </div>
     );
 

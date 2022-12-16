@@ -31,10 +31,10 @@ let products={
 
     createCardId: function (figure) {
 
-        return [{
+        return {
             id: this.createIdWithFigure(figure),
             icon: figure,
-        }]
+        }
     },
 
     createIdWithFigure: function (figure) {
