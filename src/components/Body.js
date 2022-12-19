@@ -1,16 +1,17 @@
 import React from "react";
-// import FigureElement from './FigureElement'
 
 
-function Body(props){
+export default function Body(props){
 
     return(
         <div className="container">
             {props.figures.map(figure=>
-                <img src={`assets/${figure.icon}.jpg`} 
-                    alt={figure.icon}
-                    key={figure.id}>
-                </img>
+                <div className="cardItem">
+                    <img src={`assets/${figure.icon}.jpg`} 
+                        alt={figure.icon}
+                        key={figure.id}>
+                    </img>
+                </div>
             )}    
         </div>
     
@@ -18,4 +19,3 @@ function Body(props){
 
 }
 
-export default Body;

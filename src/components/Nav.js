@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
-function Nav(){
+export default function Nav(){
     return(
     <nav className="navbar">
         <h2>Anime Action</h2>
@@ -13,5 +13,3 @@ function Nav(){
     </nav>
     );
 };
-
-export default Nav;

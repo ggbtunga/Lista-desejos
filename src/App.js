@@ -1,31 +1,28 @@
-import { useEffect} from 'react';
+import { useEffect, useState} from 'react';
 import Nav from './components/Nav';
 import Body from './components/Body';
 import './Page.css'
 import products from './products/products';
-// import FigureElement from './components/FigureElement';
 
 
-function App() {
+export default function App() {
 
+  const [figures,setFigures] = useState([])
 
   useEffect(()=>{
     
-    products.createCardsFromFigures()
+    setFigures(products.createCardsFromFigures())
 
-  },[])
-
-  console.log(products.figures)
+  },[]);
 
   return (
 
     <div className="page">
       <Nav/>
-      <Body figures={products.figures}/>
+      <Body figures={figures}/>
     </div>
 
 
   );
 }
 
-export default App;

@@ -31,4 +31,16 @@ justify-content: space-between;
     cursor: pointer;
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardItem{
+    background-color: aqua;
+    background:no-repeat;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
 
