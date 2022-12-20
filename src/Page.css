@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: grey;
+    background-color: rgb(62, 241, 107);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,11 +36,41 @@ justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.cardItem{
-    background-color: aqua;
-    background:no-repeat;
-    height: auto;
-    width: auto;
-    box-sizing: border-box;
+.cardItem img{
+    width: 3em;
+    height: 5em;
 }
+.cardItem{
+    background:no-repeat;
+    box-sizing: border-box;
+    width: 3em;
+    height: 7em;
+    background-color: rgb(62, 241, 107);
+    margin: auto;
+    border-radius: .5em;
+}
+
+
+.cardItem-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap ;
+    padding: 0 0.2em;
+}
+.cardItem-desc h1{
+    font-size: .35em;
+    text-transform: capitalize;
+}
+.figureCart{
+    width: .8rem;
+    color: black;
+}
+.figureCart:hover{
+    cursor: pointer;
+}
+.figureCart:active{
+    color: aliceblue;
+}
+
 
