@@ -17,6 +17,8 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0.3em;
+    box-sizing: border-box;
 }
 
 .nav-options{
@@ -31,12 +33,18 @@ body{
 .user:hover{
     cursor: pointer;
 }
+.user:active{
+    color:aliceblue;
+}
 
 .cart{
     width: .9rem;
 }
 .cart:hover{
     cursor: pointer;
+}
+.cart:active{
+    color: aliceblue;
 }
 
 .container{
@@ -98,6 +106,11 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.buttons .buttonAnimation:active{
+    transform: translateY(2px);
+    transition: 0.4s;
 }
 
 
