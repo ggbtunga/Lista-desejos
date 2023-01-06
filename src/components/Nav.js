@@ -12,8 +12,8 @@ export default function Nav(){
         <nav className="navbar">
             <h2>Anime Action</h2>
             <div className="nav-options">
-                <button type="button" onClick={()=>navigate('*')}><FontAwesomeIcon icon={faCartShopping} className='cart'/></button>
-                <button type="button" onClick={()=>navigate('/login')}><FontAwesomeIcon icon={faUser} className='user'/></button>
+                <button onClick={()=>navigate('*')}><FontAwesomeIcon icon={faCartShopping} id="cart"/></button>
+                <button onClick={()=>navigate('/login')}><FontAwesomeIcon icon={faUser} id="account"/></button>
             </div>
         </nav>
     );

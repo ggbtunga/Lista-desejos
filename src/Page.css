@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-family: 'Dosis', sans-serif;
 }
 
 body{
@@ -9,6 +11,10 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+}
+/* Estilo da página principal */
+.page{
+    font-size: 2.5rem;
 }
 
 .navbar{
@@ -26,24 +32,30 @@ body{
     justify-content: space-between;
 }
 
-.user{
+.nav-options button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#account{
     margin:0 1rem;
     width: .7rem; 
 }
-.user:hover{
+#account:hover{
     cursor: pointer;
 }
-.user:active{
+#account:active{
     color:aliceblue;
 }
 
-.cart{
-    width: .9rem;
+#cart{
+    width: 0.9rem;
 }
-.cart:hover{
+#cart:hover{
     cursor: pointer;
 }
-.cart:active{
+#cart:active{
     color: aliceblue;
 }
 
@@ -113,4 +125,86 @@ body{
     transition: 0.4s;
 }
 
+/* Estilo das páginas de login */
+.login-body{
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(62, 241, 107);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login{
+    padding: 1.1em;
+    margin-top:2em;
+    width: 25em;
+    height: 25em;
+    box-sizing: border-box;
+    background-color: rgb(223, 233, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.7em 0.7em rgba(102, 102, 102, 0.219);
+}
+.login h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.login p{
+    margin:1em
+}
+.login .largura{
+    border-style: none;
+    margin: 0.6em;
+    padding: 0.6em;
+    width: 90%;
+    font-size: 15px;
+}
+.login .button{
+    border-style: none;
+    margin: 0.6em;
+    padding: 0.6em;
+    width: 90%;
+    background-color: rgb(0, 202, 51);
+    border-radius: 3em;
+    font-size: 15px;
+}
+.login .button:hover{
+    background-color: rgb(0, 173, 43);
+    cursor: pointer;
+}
+.login .button:active{
+    box-shadow: 0 4px rgba(102, 102, 102, 0.671);
+    transform: translateY(3px);
+    transition: 0.1s;
+}
+.login .recuperar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.login .flexrow{
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#arrow{
+    margin-right: 3em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#arrow:hover{
+    cursor: pointer;
+}
+#arrow:active{
+    transform: translateY(4px);
+    transition: 0.2s;
+}
 
