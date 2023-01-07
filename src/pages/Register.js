@@ -4,6 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
+function validate(){
+    const email = document.getElementById("email").value;
+    const regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+    if(regx.test(email)){
+        alert("Email válido")
+        return true
+    }else{
+        alert("Email inválido")
+        return false
+    }
+
+};
+
 export default function Register(){
 
     const navigate = useNavigate();
@@ -17,10 +31,10 @@ export default function Register(){
                 </div>
                 
                 <input className="largura" id="user" name="USER" type="text" placeholder="Nome do Usuário"/>
-                <input className="largura" id="recover" name="RECOVER" type="text" placeholder="Email para registrar"/>
+                <input className="largura" id="email" name="RECOVER" type="text" placeholder="Email para registrar"/>
                 <input className="largura" id="password" name="PASSWORD" type="password" placeholder="Senha"/>
                 <input className="largura" id="repassword" type="password" placeholder="Digite a senha novamente"/>
-                <button type="button" className="button">Registrar</button>
+                <button onClick={()=>validate()} type="button" className="button">Registrar</button>
             </div>
         </div>
     );
