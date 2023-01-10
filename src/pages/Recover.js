@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function validate(){
     const email = document.getElementById("email").value;
-    const regx = /^([a-zA-Z0-9\._]+)@([a-z])+.([a-z]+)(.[a-z]+)?$/
+    const regx = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
 
     if(regx.test(email)){
         alert("Um email para trocar de senha foi enviado para o email inserido.")
