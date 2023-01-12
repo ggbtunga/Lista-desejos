@@ -40,7 +40,7 @@ body{
 
 #account{
     margin:0 1rem;
-    width: .7rem; 
+    font-size: 1.5rem;
 }
 #account:hover{
     cursor: pointer;
@@ -50,7 +50,7 @@ body{
 }
 
 #cart{
-    width: 0.9rem;
+    font-size: 1.5rem;
 }
 #cart:hover{
     cursor: pointer;
@@ -99,7 +99,8 @@ body{
     text-transform: capitalize;
 }
 .figureCart{
-    width: .8rem;
+    margin-top: 0.65rem;
+    font-size: 1rem;
     color: black;
 }
 .figureCart:hover{
@@ -118,6 +119,7 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .buttons .buttonAnimation:active{
@@ -199,6 +201,7 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 #arrow:hover{
     cursor: pointer;
