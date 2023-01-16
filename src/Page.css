@@ -98,6 +98,12 @@ body{
     font-size: .35em;
     text-transform: capitalize;
 }
+.cardItem button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .figureCart{
     margin-top: 0.65rem;
     font-size: 1rem;
@@ -211,3 +217,15 @@ body{
     transition: 0.2s;
 }
 
+.areaPonto{
+    position: relative;
+}
+.ponto {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    border-radius: 50%;
+}

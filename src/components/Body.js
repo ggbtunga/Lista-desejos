@@ -2,8 +2,11 @@ import React from "react";
 import {useRef} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight,faCartShopping  } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
 
 export default function Body(props){
+
+    const dispatch = useDispatch()
 
     const carousel = useRef(null);
 
@@ -26,7 +29,10 @@ export default function Body(props){
                     </img>
                     <div className="cardItem-desc">
                         <h1>{`Action Figure ${figure.icon}`}</h1>
-                        <FontAwesomeIcon icon={faCartShopping} className="figureCart"/>
+                        <button onClick={()=>{dispatch({type:"ADD",payload:figure})}}>
+                            <FontAwesomeIcon icon={faCartShopping} className="figureCart"/>
+                        </button>
+                        
                     </div>
                 </div>
             )}    
