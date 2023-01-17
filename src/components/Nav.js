@@ -25,7 +25,7 @@ export default function Nav(){
         <nav className="navbar">
             <h2>Anime Action</h2>
             <div className="nav-options">
-                <button className="areaPonto" onClick={()=>navigate('*')}>
+                <button className="areaPonto" onClick={()=>navigate('/cart')}>
                     <FontAwesomeIcon icon={faCartShopping} id="cart"/>
                     <div className={temItem? "ponto":""}></div>
                 </button>

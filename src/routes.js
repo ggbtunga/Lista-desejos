@@ -4,6 +4,7 @@ import Main from "./components/Main"
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Recover from "./pages/Recover";
+import Cart from "./pages/Cart"
 
 export default function LoginPages(){
     return(
@@ -11,7 +12,8 @@ export default function LoginPages(){
             <Route path="/" element={<Main/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
-            <Route path="/recover" element={<Recover/>}/>   
+            <Route path="/recover" element={<Recover/>}/>  
+            <Route path="/cart" element={<Cart/>}/> 
         </Routes>
     );
 }

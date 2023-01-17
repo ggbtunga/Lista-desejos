@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState} from 'react';
 import Nav from './Nav';
 import Body from './Body';
+import Footer from "./Footer";
 import '../Page.css'
 import products from '../products/products';
 import { legacy_createStore } from "redux";
@@ -26,6 +27,7 @@ export default function Main() {
           <Provider store={store}>
             <Nav/>
             <Body figures={figures}/>
+            <Footer/>
           </Provider>
         </div>
     );

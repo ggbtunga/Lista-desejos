@@ -229,3 +229,25 @@ body{
     background-color: red;
     border-radius: 50%;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.copyRight{
+    margin-top: 95px;
+    font-size: 20px;
+}
+.midiaIcons{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midiaIcons a{
+    margin: 10px;
+    color: black;
+}
